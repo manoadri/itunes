@@ -1,0 +1,150 @@
+/* ==============================================
+   COLORS
+   ============================================== */
+
+
+/* ==============================================
+   GLOBAL STYLES
+   ============================================== */
+   
+   body { 
+    background-image: url(../styles/images/background.jpg);
+   }
+
+.title {
+    width: 100%;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+article { 
+    margin-bottom: 0.75em;
+    padding: 30px;
+    color: rgb(247, 247, 247);
+    position: relative;
+    padding-top: 90px;   
+}
+
+   h1 { 
+       text-transform: uppercase;
+       font-size: 17pt;
+       color: #E4E4E4;
+   }
+
+   h3 { 
+     color: #FFFFFF;
+   }
+
+   h4 { 
+    color: #D1D1D1;
+  }
+
+
+   h1 h2 h3 {
+    font-family: 'Heebo', sans-serif;
+   }
+
+.record {
+    height: 300px;
+   }
+
+.d-flex {
+    color: #FFFFFF;
+}
+
+
+
+
+/* Carousel */
+
+/* Containers*/
+
+   .container{
+    position: relative;   
+}
+
+.container2{
+    position: relative;
+    padding-top:25px;
+    padding-bottom: 80px;
+}
+
+ /*Sprites*/
+
+   .sprite a { 
+    display: inline-block;
+    height: 78px;
+    width : 135px;
+    background-image: url(../images/css-sprite.png);
+    background-size: 450px auto;
+    text-indent: -9999px;
+   }
+
+   .rec-button{
+        background-position: 10px 0px;
+    }
+   .rec-button:hover {
+        background-position: 10px -85px;
+    }
+   .rec-button:active {
+        background-position: 10px -85px;
+    }
+   .buy-button{
+        background-position: -134px -0px;
+    }
+   .buy-button:hover{
+        background-position: -134px -85px;
+    }
+   .buy-button:active{
+        background-position: -134px -85px;
+    }
+        
+   .info-button{
+        background-position: -273px -0px;
+    }
+   .info-button:hover {
+        background-position: -273px -85px;
+    }
+   .info-button:active {
+        background-position: -273px -85px;
+    }
+
+/* MEDIA QUERIES
+*********************************************/
+
+
+/* Extra small devices (portrait phones, less than 576px)
+/ No media query since this is the default in Bootstrap*/
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {}
+
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {}
+
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+
+    .title {
+        width: 45%;
+        margin: 310px;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+
+    .carousel-inner {
+        width: 30%;
+        margin: auto !important;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {}
