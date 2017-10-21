@@ -7,13 +7,14 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <link href="styles/custom.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Heebo:700" rel="stylesheet">
+<link rel="icon" href="images/icon_site.png"  sizes="30x30">
 
 </head>
 <body>
      <div class="background">
         <div class="container container2">
-            <div class="row row1">
-                <div class="col-xs-12 col-lg-12">
+            <div class="row row1 justify-content-center">
+                <div class="col-xs-12 col-lg-6">
 
     <img src="images/title_carousel.png" class="title">
 
@@ -24,7 +25,7 @@
                 <img class="d-block w-100" src="images/nirvana.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                         <div class="sprite"> 
-                            <a href="" class="rec-button">Check Records</a>
+                            <a href="#albums" class="rec-button">Check Records</a>
                         </div>
                       </div>
               </div>
@@ -32,7 +33,7 @@
                 <img class="d-block w-100" src="images/pearljam.jpg" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
                         <div class="sprite"> 
-                            <a href="albums" class="rec-button">Check Records</a>
+                            <a href="#albums" class="rec-button">Check Records</a>
                         </div>
                       </div>
               </div>
@@ -40,7 +41,7 @@
                 <img class="d-block w-100" src="images/soundgarden.jpg" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
                         <div class="sprite"> 
-                            <a href="" class="rec-button">Check Records</a>
+                            <a href="#albums" class="rec-button">Check Records</a>
                         </div>
                       </div>
               </div>
@@ -55,12 +56,15 @@
             </a>
           </div>
                 </div>
+                <section id="section04" class="demo">
+                        <a href="#albums"><span></span></a>
+                </section>
             </div>
         </div>
     </div>
 
 
-    <div class="albums">
+    <div id="albums">
     <div class="container">
         <div class="row">
 
@@ -73,13 +77,20 @@
                 <h3>Nirvana</h3>
                 <img src="images/nirvana.jpg" class="record">
                 <h4>€ 16,99</h4>
+            </div>
                             <div class="sprite"> 
-                                <a href="" class="buy-button">Buy Record</a>
-                                <a class="info-button" data-toggle="modal" data-target=".bd-example-modal-sm">More Info</a>
-<!-- Small modal -->
-    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content1">
+                                <a href="https://www.amazon.de/Nevermind-Vinyl-LP-Nirvana/dp/B0000088DC" class="buy-button">Buy Record</a>
+                                <a class="info-button" type="link" data-toggle="modal" data-target="#myModal1">More Info</a>
+                                
+<!-- Modal -->
+    <div id="myModal1" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"> x </button>
+            <h5 class="modal-title">Nirvana</h5>
+            </div>
+            <div class="modal-body">
             <p>Prior to Nirvana, alternative music was consigned to specialty 
                 sections of record stores, and major labels considered it to be, 
                 at the very most, a tax write-off. After the band’s second album, 
@@ -87,83 +98,90 @@
                 and for worse. Nirvana popularized punk, post-punk, and indie 
                 rock, unintentionally bringing them into the American 
                 mainstream like no other band to date.</p>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"> Close </button>
+            </div>
         </div>
       </div>
     </div>  
 </div>   
-            </div>
 
 <!-- Tracks -->
-    <div class="d-flex flex-column">
-        <div class="d-flex justify-content-between">
-                <div class="p-2">1. Smells Like Teen Spirit</div>
-                <div class="p-2">5:02</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">2. In Bloom</div>
-                <div class="p-2">4:15</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">3. Come as You Are</div>
-                <div class="p-2">3:39</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">4. Breed</div>
-                <div class="p-2">3:04</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">5. Lithium</div>
-                <div class="p-2">4:17</div>
-                </div>
-
-<!-- Collapse --> 
-<div id="exampleAccordion" data-children=".item">
-                    <div class="item">
-                        <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion1" aria-expanded="false" aria-controls="exampleAccordion2">
-                            More tracks
-                        </a>
-                <div id="exampleAccordion1" class="collapse" role="tabpanel">
-                        <p class="mb-3">
-
-        <div class="d-flex justify-content-between">
-                <div class="p-2">6. Polly</div>
-                <div class="p-2">2:56</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">7. Territorial Pissings</div>
-                <div class="p-2">2:23</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">8. Drain You</div>
-                <div class="p-2">3:44</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">9. Lounge Act</div>
-                <div class="p-2">2:37</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">10. Stay Away</div>
-                <div class="p-2">3:33</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">11. On a Plain</div>
-                <div class="p-2">3:17</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">12. Something In The Way</div>
-                <div class="p-2">3:51</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">13. Endless, Nameless</div>
-                <div class="p-2">6:43</div>
-                </div>
-            </div>
+<div class="trackscontainer">
+        <table class="table">
+            <tbody>
+                <thead>
+                    Tracks
+                </thead>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Smells Like Teen Spirit</td>
+                    <td>5:02</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>In Bloom</td>
+                    <td>4:15</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Come as You Are</td>
+                    <td>3:39</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Breed</td>
+                    <td>3:04</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Lithium</td>
+                    <td>4:17</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Polly</td>
+                    <td>2:56</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Territorial Pissings</td>
+                    <td>2:23</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Drain You</td>
+                    <td>3:44</td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>Lounge Act</td>
+                    <td>2:37</td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>Stay Away</td>
+                    <td>3:33</td>
+                </tr>
+                <tr>
+                    <th scope="row">11</th>
+                    <td>On a Plain</td>
+                    <td>3:17</td>
+                </tr>
+                <tr>
+                    <th scope="row">12</th>
+                    <td>Something In The Way</td>
+                    <td>3:51</td>
+                </tr>
+                <tr>
+                    <th scope="row">13</th>
+                    <td>Endless, Nameless</td>
+                    <td>6:43</td>
+                </tr>
+            </tbody>
+        </table>
         </div>
-    </div>
-
-    </div>
         </article>
     </div>
 <!-- einde album 1.1 -->
@@ -175,112 +193,125 @@
             <h1>Superunknown (1994)</h1>
             <h3>Soundgarden</h3>
             <img src="images/soundgarden.jpg" class="record">
-            <h4>€ 29,99</h4>
-            <div class="sprite"> 
-                    <a href="" class="buy-button">Buy Record</a>
-                    <a class="info-button" data-toggle="modal" data-target=".bd-example-modal-sm">More Info</a>
-    
-<!-- Small modal -->
-    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content2">
-                Superunknown is the fourth album by American rock band 
-                Soundgarden, released on February 18, 1994, through 
-                A&M Records. It is the band’s second album with bassist 
-                Ben Shepherd, and features new producer Michael Beinhorn. 
-                Soundgarden began work on the album after touring in support 
-                of its previous album, Badmotorfinger (1991). Superunknown 
-                continued a departure from the band’s earlier releases while 
-                displaying a more diverse range of influences.
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-        </div>
-      </div>
-    </div>
-    </div>
+            <h4>€ 24,99</h4>
             </div>
+            <div class="sprite"> 
+                    <a href="https://www.amazon.de/Superunknown-20th-Anniversary-Remaster-Vinyl/dp/B00IXLQJ8U" class="buy-button">Buy Record</a>
+                    <a class="info-button" type="link" data-toggle="modal" data-target="#myModal2">More Info</a>
+                    
+<!-- Modal -->
+<div id="myModal2" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"> x </button>
+<h5 class="modal-title">Soundgarden</h5>
+</div>
+<div class="modal-body">
+<p>Superunknown is the fourth album by American rock band 
+        Soundgarden, released on February 18, 1994, through 
+        A&M Records. It is the band’s second album with bassist 
+        Ben Shepherd, and features new producer Michael Beinhorn. 
+        Soundgarden began work on the album after touring in support 
+        of its previous album, Badmotorfinger (1991). Superunknown 
+        continued a departure from the band’s earlier releases while 
+        displaying a more diverse range of influences.</p>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal"> Close </button>
+</div>
+</div>
+</div>
+</div>  
+</div>   
 
 <!-- Tracks -->
-<div class="d-flex flex-column">
-        <div class="d-flex justify-content-between">
-                <div class="p-2">1. Let Me Drown</div>
-                <div class="p-2">3:51</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">2. My Wave</div>
-                <div class="p-2">5:12</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">3. Fell on Black Days</div>
-                <div class="p-2">4:42</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">4. Mailman</div>
-                <div class="p-2">4:25</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">5. Superunknown</div>
-                <div class="p-2">5:06</div>
-                </div>
-
-<!-- Collapse --> 
-<div id="exampleAccordion" data-children=".item">
-                    <div class="item">
-                        <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion2" aria-expanded="false" aria-controls="exampleAccordion2">
-                            More tracks
-                        </a>
-                <div id="exampleAccordion2" class="collapse" role="tabpanel">
-                        <p class="mb-3">
-
-        <div class="d-flex justify-content-between">
-                <div class="p-2">6. Head Down</div>
-                <div class="p-2">6:08</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">7. Black Hole Sun</div>
-                <div class="p-2">5:18</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">8. Spoonman</div>
-                <div class="p-2">4:06</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">9. Limo Wreck</div>
-                <div class="p-2">5:47</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">10. The Day I Tried to Live</div>
-                <div class="p-2">5:19</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">11. Kickstand</div>
-                <div class="p-2">1:34</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">12. Fresh Tendrils</div>
-                <div class="p-2">4:16</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">13. 4th of July</div>
-                <div class="p-2">5:08</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">14. Half</div>
-                <div class="p-2">2:14</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">15. Like Suicide</div>
-                <div class="p-2">7:01</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">16. She Likes Surprises </div>
-                <div class="p-2">3:17</div>
-                </div>
-            </div>
+<div class="trackscontainer">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Let Me Drown</td>
+                    <td>3:51</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>My Wave</td>
+                    <td>5:12</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Fell on Black Days</td>
+                    <td>4:42</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Mailman</td>
+                    <td>4:25</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Superunknown</td>
+                    <td>5:06</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Head Down</td>
+                    <td>6:08</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Black Hole Sun</td>
+                    <td>5:18</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Spoonman</td>
+                    <td>4:06</td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>Limo Wreck</td>
+                    <td>5:47</td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>The Day I Tried to Live</td>
+                    <td>5:19</td>
+                </tr>
+                <tr>
+                    <th scope="row">11</th>
+                    <td>Kickstand</td>
+                    <td>1:34</td>
+                </tr>
+                <tr>
+                    <th scope="row">12</th>
+                    <td>Fresh Tendrils</td>
+                    <td>4:16</td>
+                </tr>
+                <tr>
+                    <th scope="row">13</th>
+                    <td>4th of July</td>
+                    <td>5:08</td>
+                </tr>
+                <tr>
+                    <th scope="row">14</th>
+                    <td>Half</td>
+                    <td>2:14</td>
+                </tr>
+                <tr>
+                    <th scope="row">15</th>
+                    <td>Like Suicide</td>
+                    <td>7:01</td>
+                </tr>
+                <tr>
+                    <th scope="row">16</th>
+                    <td>She Likes Surprises</td>
+                    <td>3:17</td>
+                </tr>
+            </tbody>
+        </table>
         </div>
-    </div>
-
-    </div>
         </article>
     </div>
     <!-- einde album 1.2 -->
@@ -292,109 +323,124 @@
             <h1>Ten (1991)</h1>
             <h3>Pearl Jam</h3>
             <img src="images/pearljam.jpg" class="record">
-            <h4>€ 22,99</h4>
+            <h4>€ 18,99</h4>
+            </div>
             <div class="sprite"> 
-                    <a href="" class="buy-button">Buy Record</a>
-                    <a class="info-button" data-toggle="modal" data-target=".bd-example-modal-sm">More Info</a>
-            </div>
-            <!-- Small modal -->
-    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content3">
-                Ten is the debut studio album by American rock band Pearl Jam, 
-                released on August 27, 1991 through Epic Records. Following 
-                the disbanding of bassist Jeff Ament and guitarist Stone Gossard’s 
-                previous group Mother Love Bone, the two recruited vocalist Eddie 
-                Vedder, guitarist Mike McCready, and drummer Dave Krusen to form 
-                Pearl Jam in 1990. Most of the songs began as instrumental jams, 
-                to which Vedder added lyrics about topics such as depression, 
-                homelessness, and abuse.
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-        </div>
-      </div>
-    </div>
-            </div>
-    
-            <!-- Tracks -->
-<div class="d-flex flex-column">
-        <div class="d-flex justify-content-between">
-                <div class="p-2">1. Once</div>
-                <div class="p-2">3:51</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">2. Even Flow</div>
-                <div class="p-2">4:52</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">3. Alive</div>
-                <div class="p-2">5:40</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">4. Why Go</div>
-                <div class="p-2">3:19</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">5. Black</div>
-                <div class="p-2">5:48</div>
-                </div>
+                    <a href="https://www.amazon.de/Ten-Vinyl-LP-Pearl-Jam/dp/B06Y6J6XV1/ref=tmm_vnl_swatch_0?_encoding=UTF8&qid=&sr=" class="buy-button">Buy Record</a>
+                    <a class="info-button" type="link" data-toggle="modal" data-target="#myModal3">More Info</a>
+                    
+<!-- Modal -->
+<div id="myModal3" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"> x </button>
+<h5 class="modal-title">Pearl Jam</h5>
+</div>
+<div class="modal-body">
+<p>Ten is the debut studio album by American rock band Pearl Jam, 
+        released on August 27, 1991 through Epic Records. Following 
+        the disbanding of bassist Jeff Ament and guitarist Stone Gossard’s 
+        previous group Mother Love Bone, the two recruited vocalist Eddie 
+        Vedder, guitarist Mike McCready, and drummer Dave Krusen to form 
+        Pearl Jam in 1990. Most of the songs began as instrumental jams, 
+        to which Vedder added lyrics about topics such as depression, 
+        homelessness, and abuse.</p>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal"> Close </button>
+</div>
+</div>
+</div>
+</div>  
+</div>   
 
-<!-- Collapse --> 
-<div id="exampleAccordion" data-children=".item">
-                    <div class="item">
-                        <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion3" aria-expanded="false" aria-controls="exampleAccordion2">
-                            More tracks
-                        </a>
-                <div id="exampleAccordion3" class="collapse" role="tabpanel">
-                        <p class="mb-3">
-
-        <div class="d-flex justify-content-between">
-                <div class="p-2">6. Jeremy</div>
-                <div class="p-2">5:18</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">7. Oceans</div>
-                <div class="p-2">2:41</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">8. Porch</div>
-                <div class="p-2">3:30</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">9. Garden</div>
-                <div class="p-2">4:58</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">10. Deep</div>
-                <div class="p-2">4:18</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">11. Release</div>
-                <div class="p-2">6:30</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">12. Fresh Tendrils</div>
-                <div class="p-2">4:16</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">13. 4th of July</div>
-                <div class="p-2">5:08</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">14. Half</div>
-                <div class="p-2">2:14</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">15. Like Suicide</div>
-                <div class="p-2">7:01</div>
-                </div>
-        <div class="d-flex justify-content-between">
-                <div class="p-2">16. She Likes Surprises </div>
-                <div class="p-2">3:17</div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- Tracks -->
+<div class="trackscontainer">
+    <table class="table">
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Once</td>
+                <td>3:51</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Even flow</td>
+                <td>4:52</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Alive</td>
+                <td>5:40</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Why Go</td>
+                <td>3:19</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Black</td>
+                <td>5:48</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Jeremy</td>
+                <td>5:18</td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>Oceans</td>
+                <td>2:41</td>
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td>Porch</td>
+                <td>3:30</td>
+            </tr>
+            <tr>
+                <th scope="row">9</th>
+                <td>Garden</td>
+                <td>4:58</td>
+            </tr>
+            <tr>
+                <th scope="row">10</th>
+                <td>Deep</td>
+                <td>4:18</td>
+            </tr>
+            <tr>
+                <th scope="row">11</th>
+                <td>Release</td>
+                <td>6:30</td>
+            </tr>
+            <tr>
+                <th scope="row">12</th>
+                <td>Fresh Tendrils</td>
+                <td>4:16</td>
+            </tr>
+            <tr>
+                <th scope="row">13</th>
+                <td>4th of July</td>
+                <td>5:08</td>
+            </tr>
+            <tr>
+                <th scope="row">14</th>
+                <td>Half</td>
+                <td>2:14</td>
+            </tr>
+            <tr>
+                <th scope="row">15</th>
+                <td>Like Suicide</td>
+                <td>7:01</td>
+            </tr>
+            <tr>
+                <th scope="row">16</th>
+                <td>She Likes Surprises</td>
+                <td>3:17</td>
+            </tr>
+        </tbody>
+    </table>
     </div>
      </article>
     </div>
@@ -407,10 +453,11 @@
 
 
 <!-- Footer -->
-
     <footer class="panel-footer">
           <p class="text-muted">&copy; 2017 MyTunes </p>
     </footer>
+
+
 
 <!-- Script -->    
 
