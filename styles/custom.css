@@ -25,7 +25,7 @@
     }
 
 
-   h1 h2 h3 h5 p {
+   h1 h2 h3 h4 h5 p {
     font-family: 'Heebo', sans-serif;
  }
 
@@ -43,11 +43,15 @@
        font-size: 17pt;
     }
 
+    h4 {
+        color: #F5F5F5;
+        font-size: 12pt;
+    }
+
     .record {
         height: 300px;
     }
     
-
     .trackscontainer {
         height: 230px;
         overflow-y: scroll;
@@ -143,13 +147,13 @@
         background-position: 10px -85px;
     }
    .buy-button{
-        background-position: -134px -0px;
+        background-position: -133px -0px;
     }
    .buy-button:hover{
-        background-position: -134px -85px;
+        background-position: -133px -84.5px;
     }
    .buy-button:active{
-        background-position: -134px -85px;
+        background-position: -133px -84.5px;
     }
         
    .info-button{
